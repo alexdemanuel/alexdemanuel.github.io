@@ -7,13 +7,13 @@
 
 # Site settings
 title: IAW - Blog
-email: your-email@domain.com
+email:
 description: > # this means to ignore newlines until "baseurl:"
   Blog de Guias de IAW - Implantación de aplicaciones web.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: Alexdemanuel
+twitter_username:
 github_username:  Alexdemanuel
 
 # Build settings
