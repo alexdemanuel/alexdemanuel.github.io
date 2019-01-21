@@ -15,9 +15,9 @@ categories: desarrollo
 
 *Los elementos **echo** y **print** muestran cadenas de texto que se le introducen, en el caso de **echo** pueden introducirse varias pero en **print** unicamente se puede introducir una sola cadena de texto*
 
-*Resolución*
+*Resolución:*
 
-´´´bash
+```bash
 // nos genera un numero entre los valores del rand y nos lo muestra 
 print("Valor de rand: ");
 print(rand(0,1));
@@ -35,11 +35,11 @@ if ($numero == 0) {
      echo "<img src='images/cruz.jpg'>";
 }
 ?>
-´´´
+```
 
 # 2. Escribe un script PHP que mediante un formulario permita introducir una nota numérica y muestre un mensaje indicando la calificación obtenida teniendo en cuenta los siguientes rangos:
 
-*Resolución*
+*Resolución:*
 
 ```bash
 <?php
@@ -74,7 +74,7 @@ echo $nota;
 
 - [Documentación de la estructura de control switch](http://php.net/manual/es/control-structures.switch.php)
 
-*Resolución*
+*Resolución:*
 ```bash
 <?php
 

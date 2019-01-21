@@ -9,7 +9,8 @@ categories: desarrollo
 
 - [Documentacion oficial de la funcion phpinfo](http://php.net/manual/es/function.phpinfo.php)
 
-*Resolución*
+*Resolución:*
+
 ```bash
 <?php
 phpinfo()
@@ -33,7 +34,7 @@ phpinfo()
 [Documentación Oficial Variable superglobal *$_SERVER*](http://php.net/reserved.variables.server)
 
 
-*Resolución*
+*Resolución:*
 
 ```bash 
 
@@ -58,7 +59,7 @@ print("</pre>");
 
 - [Documentación oficial de las variables globales](http://php.net/manual/es/language.variables.superglobals.php)
 
-*Resolución*
+*Resolución:*
 
 ```bash
 <?php
@@ -141,7 +142,7 @@ print("</pre>");
 
 # 4. Escribe un script que haga una redirección a una URL diferente.
 
-*Resolución*
+*Resolución:*
 
 ```bash
 <?php

@@ -5,15 +5,15 @@ date:   2019-01-21 11:20:02 +0000
 categories: desarrollo
 ---
 
-#1. Escribe un script que muestre la tabla de multiplicar de un número aleatorio.
+# 1. Escribe un script que muestre la tabla de multiplicar de un número aleatorio.
 
 - [Documentación del bucle *for*]( http://php.net/manual/es/control-structures.for.php)
 
 - [Creación de tablas HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables)
 
-*Unir variables a la cadena de texto se usan los puntos. Ejemplo: echo "esto es un" .$variable. "ejemplo" *
+*Unir variables a la cadena de texto se usan los puntos. Ejemplo: echo "esto es un" .$variable. "ejemplo"*
 
-*Resolucion*
+*Resolucion:*
 
 ```bash
 <?php
@@ -42,7 +42,7 @@ echo "</table>";
 
 
 
-*Resolución*
+*Resolución:*
 
 ```bash
 
