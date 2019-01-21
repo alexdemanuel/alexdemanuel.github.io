@@ -150,9 +150,11 @@ header('Location: https://example.com');
 ```
 
 
-*Documentación Extra*
+*Documentación Extra:*
 
 
-[Documentación oficial de la funcion de red *header*](http://php.net/manual/es/function.header.php)
+- [Documentación oficial de la funcion de red *header*](http://php.net/manual/es/function.header.php)
 
-[Documentación oficial de la funcion *print_r*](http://php.net/manual/es/function.print-r.php)
+- [Documentación oficial de la funcion *print_r*](http://php.net/manual/es/function.print-r.php)
+
+- [Repositorio GitHub](https://github.com/alexdemanuel/Practicas-PHP)
