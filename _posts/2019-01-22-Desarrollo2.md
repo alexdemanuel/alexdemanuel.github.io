@@ -110,6 +110,116 @@ switch($dia){
 ?>
 ```
 
+# 4. Escribe un script PHP que realice la simulación de lanzar un dado y muestre una imagen con un valor aleatorio enre 1 y 6. Resuelva el ejercicio utilizando la estructura de control *if - else*.
+*Imágenes:* [1](https://upload.wikimedia.org/wikipedia/commons/1/1b/Dice-1-b.svg), [2](https://upload.wikimedia.org/wikipedia/commons/5/5f/Dice-2-b.svg), [3](https://upload.wikimedia.org/wikipedia/commons/b/b1/Dice-3-b.svg), [4](https://upload.wikimedia.org/wikipedia/commons/f/fd/Dice-4-b.svg), [5](https://upload.wikimedia.org/wikipedia/commons/0/08/Dice-5-b.svg), [6](https://upload.wikimedia.org/wikipedia/commons/2/26/Dice-6-b.svg)
+
+*Resolución:*
+
+
+```bash
+
+<?php
+$numero = rand(1,6);
+
+echo $numero;
+echo "</br>";
+
+    if($numero==1){
+        echo "<img src='images/1.svg'</img>";
+    }else if($numero==2){
+        echo "<img src='images/2.svg'</img>";
+    }else if($numero==3){
+        echo "<img src='images/3.svg'</img>";
+    }else if($numero==4){
+        echo "<img src='images/4.svg'</img>";
+    }else if($numero==5){
+        echo "<img src='images/5.svg'</img>";
+    }else if($numero==6){
+        echo "<img src='images/6.svg'</img>";
+    }
+?>
+```
+
+
+# 5. Escribe un script PHP que realice la simulación de lanzar un dado y muestre una imagen con un valor aleatorio entre 1 y 6. Resuelva el ejercicio utilizando la estructura de control switch.
+
+
+*Resolución:*
+
+```bash
+<?php
+$numero = rand(1,6);
+
+echo "valor del dado: ".$numero;
+echo "</br>";
+
+switch($numero){
+    case 1:
+        echo "<img src='images/1.svg'</img>";
+        break;
+
+    case 2:
+        echo "<img src='images/2.svg'</img>";
+        break;
+
+    case 3:
+        echo "<img src='images/3.svg'</img>";
+        break;
+
+    case 4:
+        echo "<img src='images/4.svg'</img>";
+        break;
+
+    case 5:
+        echo "<img src='images/5.svg'</img>";    
+        break;
+
+    case 6:
+        echo "<img src='images/6.svg'</img>";    
+        break;
+}
+?>
+```
+
+# 6. Escribe un script PHP que realice la simulación de lanzar un dado y muestre una imagen con un valor aleatorio enre 1 y 6. Resuelva el ejercicio sin utilizar las estructuras de control if - else y switch.
+
+*Resolución:*
+
+```bash
+<?php
+
+$numero = rand(1,6);
+echo "valor del dado: ".$numero;
+
+echo "</br>";
+
+echo "<img src='images/$numero.svg'</img>";
+
+?>
+```
+
+
+# 7. Escribe un script PHP que realice la simulación de lanzar dos dados y muestre una imagen con los valores obtenidos en cada uno de los dados.
+
+
+
+*Resolución:*
+
+```bash
+<?php
+
+$numero = rand(1,6);
+$numero2 = rand(1,6);
+
+echo "valor del dado: ".$numero;
+echo "-----------";
+echo "valor del dado 2: ".$numero2;
+echo "</br>";
+
+        echo "<img src='images/$numero.svg'</img>";
+        echo "<img src='images/$numero2.svg'</img>";
+?>
+```
 
 *Documentacion Extra:*
 
