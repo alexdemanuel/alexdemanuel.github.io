@@ -185,6 +185,33 @@ echo "</table>";
 ?>
 ```
 
+# Función *do while*
+
+[Documentación oficial de la funcion do - while](http://php.net/manual/es/control-structures.do.while.php)
+
+## 1. Escribe un script PHP que muestre los números del 1 al 10 en una tabla de una fila y 10 columnas. Utiliza un bucle while
+
+*Resolución:*
+
+```bash
+<?php
+echo "<table border='1'>";
+    echo "<tr>";
+
+        $i=1;
+        do{
+            echo "<td> $i </td>";
+            $i++;
+        }
+        while($i<=10);
+
+        echo "</tr>"; 
+echo "</table>";
+
+?>
+
+```
+
 *Documentacion Extra:*
 
 - [Repositorio GitHub](https://github.com/alexdemanuel/Practicas-PHP)
