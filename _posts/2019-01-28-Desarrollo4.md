@@ -301,7 +301,7 @@ echo "</br>";
 //Declaro el array
 $valores = array();
 
-//inicializo el array con 10 numero aleatorios
+//inicializo el array
 $i=0;
 while ( $i <= 9){
     $valores[$i] = rand(1,30);
@@ -369,14 +369,14 @@ echo "</br>";
 $valores = array();
 
 
-//inicializo el array con 10 numero aleatorios
+//inicializo el array
 $i=0;
     do{
         $valores[$i] = rand(1,30);
         echo "</br>";
         $i++;
     }
-while ( $i <= 9);
+while ( $i < 9);
 
 $i=0;
     do {
@@ -409,7 +409,7 @@ $i = 0;
         }
             $i++;
     }
-    while ($i <10);
+    while ($i <=10);
 echo "El número máximo es: ".$maximo. " y esta en la posición: ".$posicion;
 echo "</br>";
 
@@ -429,6 +429,149 @@ echo "</br>";
 ?>
 ```
 
+### 8.Escribe un script PHP que sobre un array de temperaturas realice las siguientes operaciones:
+
+- Mostrar el listado ordenado de mayor a menor.
+- Mostrar el listado ordenado de menor a mayor.
+
+El array de temperaturas lo vamos a generar con números aleatorios. El número de elementos del array será especificado mediante un formulario y los valores aletorios generados estarán entre 1 y 30.
+
+
+- [Documentación función *sort*](http://php.net/manual/es/function.sort.php)
+- [Documentación función *rsort*](http://php.net/manual/es/function.rsort.php)
+
+
+```bash
+<?php
+    //Proximamente
+?>
+
+```
+
+## Arays asociativos
+
+### 1. Escribe un script PHP que permita ordenar el siguiente array asociativo
+
+- [Documentación de la función *asort*](http://php.net/manual/es/function.asort.php)
+- [Documentación de la función *arsort*](http://php.net/manual/es/function.arsort.php)
+- [Documentación de la función *ksort*](http://php.net/manual/es/function.ksort.php)
+- [Documentación de la función *krsort*](http://php.net/manual/es/function.krsort.php)
+
+- [Documentación de la función *foreach*](http://php.net/manual/es/control-structures.foreach.php)
+
+
+*Resolución:*
+
+```bash
+
+<?php
+
+$alumnos = array("Antonio"=>"31", "Maria"=>"28", "Juan"=>"29", "Pepe"=>"27");
+
+//Orden ascencente por valor 
+echo "<h2> Orden ascendente por valor (asort)</h2>";
+asort($alumnos);
+echo "<table border='1'>";
+    foreach($alumnos as $clave => $valor){
+        echo "<tr>";
+        echo "<td>$clave</td>";
+        echo "<td bgcolor=#FF5733>$valor</td>";
+        echo "</tr>";
+
+    }
+    echo "</table>";
+//Orden ascencente por Clave
+echo "<h2> Orden descendente por valor (arsort)</h2>";
+arsort($alumnos);
+echo "<table border='1'>";
+    foreach($alumnos as $clave => $valor){
+        echo "<tr>";
+        echo "<td>$clave</td>";
+        echo "<td bgcolor=#FF5733>$valor</td>";
+        echo "</tr>";
+
+    }
+    echo "</table>";
+    echo "</br>";
+
+    //Orden descencente por clave
+echo "<h2> Orden ascendente por clave (ksort)</h2>";
+ksort($alumnos);
+echo "<table border='1'>";
+    foreach($alumnos as $clave => $valor){
+        echo "<tr>";
+        echo "<td bgcolor=#99FF33>$clave</td>";
+        echo "<td>$valor</td>";
+        echo "</tr>";
+
+    }
+    echo "</table>";
+    echo "</br>";
+
+//Orden descencente por clave
+echo "<h2> Orden descendente por clave (krsort)</h2>";
+krsort($alumnos);
+echo "<table border='1'>";
+    foreach($alumnos as $clave => $valor){
+        echo "<tr>";
+        echo "<td bgcolor=#99FF33>$clave</td>";
+        echo "<td>$valor</td>";
+        echo "</tr>";
+
+    }
+    echo "</table>";
+
+/*sacar el valor de una clave determinada del array
+echo "Posicion 1: ".$alumnos["Juan"];
+echo "</br>";
+echo "Posicion 1: ".$alumnos['Juan'];
+echo "</br>";
+*/
+?>
+``` 
+
+### 2.Escribe un script PHP que muestre el siguiente array asociativo ordenado por la clave. El resultado deberá seguir el siguiente patrón:
+
+- *La capital de Italia es Roma*
+- Ordenalas por clave en orden descendente (ksort)
+- Los paises y capitales conviertelos en mayusculas
+- Los paises en negrita
+- Las capitales en cursiva 
+
+*Resolución:*
+
+
+```bash
+<?php
+$capitales=array("Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki", "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland"=>"Dublin", "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon", "Spain"=>"Madrid", "Sweden"=>"Stockholm", "United Kingdom"=>"London", "Cyprus"=>"Nicosia", "Lithuania"=>"Vilnius", "Czech Republic"=>"Prague", "Estonia"=>"Tallin", "Hungary"=>"Budapest", "Latvia"=>"Riga", "Malta"=>"Valetta", "Austria" => "Vienna", "Poland"=>"Warsaw");
+
+ksort($capitales);
+    foreach($capitales as $clave => $valor){
+        echo "La capital de <strong>".strtoupper($clave)."</strong> es <em>".strtoupper($valor)."</em>";
+        echo "</br> \n";
+    }
+
+?>
+```
+
+### 3. Escribe un script PHP que convierta el array del ejercicio anterior en un objeto JSON.
+
+- [Documentación JSON](http://php.net/manual/es/book.json.php)
+- [Documentación función *json_encode*](http://php.net/manual/es/function.json-encode.php)
+
+
+
+*Resolución:*
+
+
+```bash
+<?php
+$capitales=array("Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki", "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland"=>"Dublin", "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon", "Spain"=>"Madrid", "Sweden"=>"Stockholm", "United Kingdom"=>"London", "Cyprus"=>"Nicosia", "Lithuania"=>"Vilnius", "Czech Republic"=>"Prague", "Estonia"=>"Tallin", "Hungary"=>"Budapest", "Latvia"=>"Riga", "Malta"=>"Valetta", "Austria" => "Vienna", "Poland"=>"Warsaw");
+
+echo json_encode($capitales);
+
+?>
+```
 
 *Documentacion Extra:*
 
