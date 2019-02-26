@@ -107,8 +107,8 @@ $lista = inicializar_array(10, 1, 40);
     - Valor mínimo
 
 - Funciones.php
-```bash
 
+```bash
 <?php
 
 // Array de valores a introducir 
@@ -170,7 +170,6 @@ function calcular_min($lista){
 }
 ?>
 ```
-
 
 - Index.php
 

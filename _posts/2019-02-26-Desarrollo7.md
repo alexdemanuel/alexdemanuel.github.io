@@ -4,16 +4,18 @@ title:  "Desarrollo - Formularios con PHP"
 date:   2019-01-25 11:20:02 +0000
 categories: desarrollo
 ---
-#Formularios con PHP
+# Formularios con PHP
 
-[Documentación de la variable superglobal *$_GET*](http://php.net/manual/es/reserved.variables.get.php)
-[Documentación de la función empty](http://php.net/manual/es/function.empty.php)
-[Formularios HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)
+- [Documentación de la variable superglobal *$_GET*](http://php.net/manual/es/reserved.variables.get.php)
+- [Documentación de la función empty](http://php.net/manual/es/function.empty.php)
+- [Formularios HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)
 
 ## 1. Escribe un script que muestre un formulario con un campo de texto y que permita enviarlo usando el método GET. El mismo script será capaz de recibir el dato enviado por el formulario y lo mostrará.
 
 *Formulario:*
+
 ```bash
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -159,12 +161,6 @@ function multiplicar($numero){
             <option value="5">Franco Suizo</option>
             <option value="6">Peso Colombiano</option>
         </select>
-
-      <!--  <label for="range">Rango:</label>
-        <input type="range" min="0" max="1" id="range" name="rango">
-
-
-        -->
             <button type="submit">Enviar</button> 
             
     </div>
@@ -172,9 +168,8 @@ function multiplicar($numero){
 <?php
 $number_of_coins = $_POST["number_of_coins"];
 $type_of_coins = $_POST["type_of_coins"];
-$range = $_POST["range"];
 
-//print_r($_POST);
+
 
 if(empty($number_of_coins) || $type_of_coins == 1){
     echo "<h2>Has de introducir los datos en todos los campos</h2>";
