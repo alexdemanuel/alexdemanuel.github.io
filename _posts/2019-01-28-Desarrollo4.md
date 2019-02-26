@@ -443,10 +443,8 @@ El array de temperaturas lo vamos a generar con números aleatorios. El número 
 
 ```bash
 <?php
-    <?php
 
 $numeros = array();
-
 
 //inicializo el array
 
@@ -494,8 +492,6 @@ echo "</table>";
 
 
 ?>
-?>
-
 ```
 
 ## Arays asociativos
@@ -506,7 +502,6 @@ echo "</table>";
 - [Documentación de la función *arsort*](http://php.net/manual/es/function.arsort.php)
 - [Documentación de la función *ksort*](http://php.net/manual/es/function.ksort.php)
 - [Documentación de la función *krsort*](http://php.net/manual/es/function.krsort.php)
-
 - [Documentación de la función *foreach*](http://php.net/manual/es/control-structures.foreach.php)
 
 
